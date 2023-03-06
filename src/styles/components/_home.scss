@@ -1,0 +1,59 @@
+.home-color {
+
+    height: 100vh;
+
+    &.dark {
+        background-color: $Very-Dark-Blue;
+    }
+
+    &.light {
+        background-color: $Very-Light-Grayish-Blue;
+    }
+}
+
+
+.home-body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.dark {
+        background-image: url("../../images/bg-desktop-dark.jpg");
+    }
+
+    &.light {
+
+        background-image: url("../../images/bg-desktop-light.jpg");
+    }
+}
+
+.app-container {
+    margin: 100px auto 25px;
+    width: 700px;
+
+    @media(max-width: 700px) {
+        width: 400px;
+    }
+
+    @media(max-width: 450px) {
+        padding: 10px;
+        width: 90%
+    }
+
+    .sombra {
+        &.dark {
+            box-shadow: 0px 14px 20px #111;
+        }
+
+        &.light {
+            box-shadow: 0px 14px 20px #c6c6c6;
+
+        }
+    }
+}

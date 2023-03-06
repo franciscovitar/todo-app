@@ -1,0 +1,19 @@
+.tittle-container {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            letter-spacing: 10px;
+            font-size: 28px;
+
+            @media(max-width: 700px) {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.footer-container {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        &.dark {
+            background-color: $Very-Very-Dark-Grayish-Blue;
+        }
+
+        &.light {
+            background-color: $Very-Light-Gray
+        }
+
+        p {
+            color: $Light-Grayish-Blue;
+        }
+
+        .left {
+            p {
+
+                @media(max-width: 700px) {
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+        .medium {
+            display: flex;
+            gap: 10px;
+
+            p {
+                @media(max-width: 700px) {
+                    font-size: 10px;
+                }
+
+                cursor: pointer;
+
+                &.selected {
+                    color: $Bright-Blue;
+                }
+            }
+
+            p:hover {
+                color: $Bright-Blue;
+            }
+
+        }
+
+        .right {
+            p {
+                @media(max-width: 700px) {
+                    font-size: 10px;
+                }
+
+                cursor: pointer;
+            }
+
+            p:hover {
+                color: $Bright-Blue;
+            }
+
+        }
+
+    }
+
+}

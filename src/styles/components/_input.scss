@@ -1,0 +1,51 @@
+.todo-container {
+    margin-bottom: 10px;
+
+    .container {
+
+        .body {
+            margin-top: 50px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            &.dark {
+                background-color: $Very-Very-Dark-Grayish-Blue;
+            }
+
+            &.light {
+                background-color: $Very-Light-Gray;
+
+            }
+
+            .input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+
+
+
+                &.light {
+                    color: black;
+                }
+            }
+
+            .circle {
+                border-radius: 100%;
+                padding: 10px;
+                width: 10px;
+                height: 10px;
+
+                &.dark {
+                    border: solid 1px $Very-Dark-Grayish-Blue
+                }
+
+                &.light {
+                    border: solid 1px $Light-Grayish-Blue;
+                }
+
+            }
+        }
+    }
+}
